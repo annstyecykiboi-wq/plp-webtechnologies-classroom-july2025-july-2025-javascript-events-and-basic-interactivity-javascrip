@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A web page about lions with interactive sections and a custom-validated conservation form.">
+    <title>Lion Conservation Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Lion Conservation Hub</h1>
+        <p>Join us in protecting the king of the savanna.</p>
+    </header>
+
+    <main>
+        <section aria-labelledby="facts-heading">
+            <h2 id="facts-heading">Lion Facts</h2>
+            <p>Learn about these majestic big cats.</p>
+            <ul class="lion-facts">
+                <li>Lions live in prides of up to 30 members</li>
+                <li>Males weigh 400-550 lbs, females 260-400 lbs</li>
+                <li>Roar can be heard up to 5 miles away</li>
+                <li>Life expectancy: 10-14 years in the wild</li>
+            </ul>
+            <button id="toggle-facts">Toggle Facts Visibility</button>
+        </section>
+
+        <section aria-labelledby="habitat-heading">
+            <h2 id="habitat-heading">Lion Habitats</h2>
+            <p>Discover where lions roam.</p>
+            <table class="habitats-table">
+                <caption>Lion Habitat Regions</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Region</th>
+                        <th scope="col">Countries</th>
+                        <th scope="col">Environment</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Serengeti</td>
+                        <td>Tanzania, Kenya</td>
+                        <td>Grasslands, savannas</td>
+                    </tr>
+                    <tr>
+                        <td>Kalahari Desert</td>
+                        <td>Botswana, Namibia</td>
+                        <td>Arid savanna</td>
+                    </tr>
+                    <tr>
+                        <td>Okavango Delta</td>
+                        <td>Botswana</td>
+                        <td>Wetlands, savanna</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section aria-labelledby="media-heading">
+            <h2 id="media-heading">Lion Media</h2>
+            <p>Explore lions in their natural habitat.</p>
+            <div class="media-container">
+                <figure>
+                    <img src="https://via.placeholder.com/400x300?text=Lion" alt="Lion resting in savanna">
+                    <figcaption>Lion in the wild</figcaption>
+                </figure>
+                <figure>
+                    <video controls aria-label="Video of a lion pride">
+                        <source src="https://archive.org/download/BigBuckBunny_124/BigBuckBunny_124.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <figcaption>Lion pride in action</figcaption>
+                </figure>
+            </div>
+            <button id="enlarge-media">Enlarge Media</button>
+        </section>
+
+        <section aria-labelledby="form-heading">
+            <h2 id="form-heading">Pledge for Lion Conservation</h2>
+            <p>Commit to supporting lion conservation efforts.</p>
+            <form id="conservation-form">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label for="name">Name <span aria-hidden="true">*</span></label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+
+                    <label for="email">Email <span aria-hidden="true">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter 10-digit phone number">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Pledge Details</legend>
+                    <label for="pledge-type">Pledge Type <span aria-hidden="true">*</span></label>
+                    <select id="pledge-type" name="pledge_type">
+                        <option value="">Select an option</option>
+                        <option value="donation">Donation</option>
+                        <option value="volunteer">Volunteer</option>
+                        <option value="advocate">Advocate</option>
+                    </select>
+
+                    <label for="message">Message <span aria-hidden="true">*</span></label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your pledge for lion conservation"></textarea>
+                </fieldset>
+
+                <label for="date">Pledge Date</label>
+                <input type="text" id="date" name="date" value="2025-09-21" readonly>
+
+                <label><input type="checkbox" id="newsletter" name="newsletter" value="yes"> Receive lion conservation updates</label>
+
+                <button type="submit">Submit Pledge</button>
+            </form>
+            <p id="form-status" class="status-message">Pledge status will appear here.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Lion Conservation Hub. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

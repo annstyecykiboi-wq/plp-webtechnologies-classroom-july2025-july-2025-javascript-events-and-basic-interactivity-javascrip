@@ -1,0 +1,181 @@
+/* Base styles for layout and typography */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fdf6e3;
+}
+
+/* Header with lion-themed colors */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #d4a017;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Section styling for consistency */
+main section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #d4a017;
+    margin-bottom: 15px;
+}
+
+/* List styling for facts */
+.lion-facts {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.lion-facts li {
+    margin-bottom: 10px;
+}
+
+/* Table styling for habitats */
+.habitats-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.habitats-table th,
+.habitats-table td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.habitats-table th {
+    background-color: #f9e4b7;
+    font-weight: bold;
+}
+
+.habitats-table caption {
+    padding: 10px;
+    font-weight: bold;
+    color: #d4a017;
+}
+
+/* Media container with flexbox for responsiveness */
+.media-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.media-container figure {
+    margin: 0;
+    max-width: 400px;
+}
+
+.media-container img,
+.media-container video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.media-container.enlarged img,
+.media-container.enlarged video {
+    max-width: 120%;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Form styling */
+#conservation-form {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+legend {
+    font-weight: bold;
+    color: #d4a017;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button[type="submit"],
+#toggle-facts,
+#enlarge-media {
+    background-color: #d4a017;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover,
+#toggle-facts:hover,
+#enlarge-media:hover {
+    background-color: #b38712;
+}
+
+.status-message {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    background-color: #f9e4b7;
+    border-radius: 8px;
+    margin-top: 30px;
+}
